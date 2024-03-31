@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/res_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="@string/name"
+        android:textSize="23sp"
+        android:paddingStart="10dp" />
+    <TextView
+        android:id="@+id/res_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/res_name"
+        android:hint="@string/location"
+        android:paddingStart="10dp"/>
+    <TextView
+        android:id="@+id/res_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/res_location"
+        android:hint="@string/phone"
+        android:paddingStart="10dp"/>
+    <TextView
+        android:id="@+id/res_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_phone"
+        android:textColor="@color/black"
+        android:hint="@string/description"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/res_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_description"
+        android:textColor="@color/black"
+        android:hint="@string/rating"
+        android:paddingStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        android:layout_below="@id/res_rating"
+        />
+
+</RelativeLayout>

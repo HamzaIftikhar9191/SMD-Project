@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_restaurant_info"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="@string/restaurant_info"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txt_search"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:layout_below="@id/txt_restaurant_info"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:layout_toEndOf="@id/txt_search"
+        android:layout_below="@id/txt_restaurant_info"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        android:layout_toEndOf="@id/btn_search"
+        android:layout_below="@id/txt_restaurant_info"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_below="@id/txt_search"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_below="@id/btn_add"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_delete"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

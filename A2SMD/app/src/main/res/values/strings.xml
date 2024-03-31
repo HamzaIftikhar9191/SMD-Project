@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">A2SMD</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="phone">Phone</string>
+    <string name="description">Description</string>
+    <string name="add">ADD</string>
+    <string name="add_restaurant">Add Restaruant</string>
+    <string name="go_to_restaurants">GO to Restaurants</string>
+    <string name="restaurant_info">Restaurants Info</string>
+    <string name="delete">DELETE</string>
+    <string name="register_restaurant">Register Restaurant</string>
+    <string name="rating_1_5">Rating 1 - 5</string>
+    <string name="rating">Rating</string>
+    <string name="search">Search</string>
+    <string name="refresh">Refresh</string>
+</resources>
